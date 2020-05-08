@@ -17,6 +17,7 @@ def on_say():
 
 
 def main():
+    print("Select any text. Press Control + c and Alt + 1 ")
     listen = Thread(target=add_listen())
     listen.start()
 

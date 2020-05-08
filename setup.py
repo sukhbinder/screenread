@@ -9,7 +9,7 @@ setup(
     author="sukhbinder",
     author_email="sukh2010@yahoo.com",
     entry_points={
-        'console_scripts': ['say = screenread:main', ],
+        'console_scripts': ['listen = screenread:main', ],
     },
     install_requires=["winsay"],
 
