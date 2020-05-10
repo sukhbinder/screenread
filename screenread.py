@@ -17,13 +17,13 @@ def on_say():
 
 
 def main():
-    print("Select any text. Press Control + c and Alt + 1 ")
+    print("Select any text. Press Control + c and Control + 1 ")
     listen = Thread(target=add_listen())
     listen.start()
 
 
 def add_listen():
-    keyboard.add_hotkey("alt+1", on_say)
+    keyboard.add_hotkey("ctrl+1", on_say)
     keyboard.wait("shift+esc")
 
 
