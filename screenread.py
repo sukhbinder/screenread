@@ -1,8 +1,11 @@
-import tkinter as tk
 import keyboard
 from subprocess import run
 from threading import Thread
 
+try:
+    import tkinter as tk
+except ImportError:
+    import Tkinter as tk
 
 def get_clipboard():
     root = tk.Tk()
